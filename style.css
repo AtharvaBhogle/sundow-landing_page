@@ -1,0 +1,108 @@
+@font-face {
+  font-family: neu;
+  src: url(./fonts/NeueHaasDisplayMediu.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: neu;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#page1 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: hsl(35, 27%, 91%);
+  padding: 0 2vw;
+}
+
+/* NAVBAR */
+
+#nav {
+  padding: 2vw 0;
+  width: 100%;
+  background-color: hsl(35, 27%, 91%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-2 {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+#nav-2 h4 {
+  padding: 10px 20px;
+  border: 1px solid hsla(0, 2%, 11%, 0.73);
+  border-radius: 50px;
+  font-weight: 500;
+  color: rgb(17, 14, 14);
+  font-size: 17px;
+  position: relative;
+  transition: all ease 0.4s;
+  overflow: hidden;
+  cursor: pointer;
+}
+#nav-2 h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 10%;
+  transition: all ease 0.4s;
+}
+#nav-2 h4:hover::after {
+  bottom: 0;
+}
+
+#nav-2 h4 a {
+  text-decoration: none;
+  color: rgb(17, 14, 14);
+  z-index: 9;
+  position: relative;
+}
+
+#nav-2 h4:hover a {
+  color: white;
+}
+
+/* CENTER */
+
+#center {
+  height: 65vh;
+  width: 100%;
+  background-color: hsl(35, 27%, 91%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid hsla(0, 9%, 22%, 0.455);
+  padding-bottom: 2vw;
+}
+#left h4 {
+  width: 25vw;
+  font-size: 2vw;
+  line-height: 2vw;
+}
+#center h1 {
+  font-size: 9vw;
+  line-height: 7.7vw;
+  text-align: right;
+}
+
+#page1 video {
+  width: 100%;
+  margin-top: 2vw;
+  border-radius: 25px;
+}
